@@ -1,0 +1,61 @@
+.picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#gallery {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: -15px;
+  padding: 0 20px;
+}
+#gallery > li {
+  margin: 15px;
+  display: block;
+  max-width: 450px;
+  height: 300px;
+}
+
+#name-input {
+  margin-top: 30px;
+}
+
+#validation-input {
+  border: 3px solid #bdbdbd;
+  margin-bottom: 30px;
+}
+
+#validation-input.valid {
+  border-color: #4caf50;
+}
+
+#validation-input.invalid {
+  border-color: #f44336;
+}
+
+.task-seven {
+  display: flex;
+  justify-content: center;
+}
+
+#text {
+  display: flex;
+  margin-bottom: 30px;
+  justify-content: center;
+}
+
+#controls {
+  display: flex;
+  justify-content: center;
+}
+
+#controls input {
+  margin-right: 15px;
+}
+
+[data-action='render'] {
+  margin-right: 15px;
+}
