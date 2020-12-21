@@ -28,12 +28,14 @@ function createBoxes(amount) {
     for (let i = 0; i < amount; i += 1) {
         const createdBoxRef = document.createElement('div');
         setRandomColor(createdBoxRef);
-         let width = 30;
+        let width = 30;
         let height = 30;
         width += 10 * i;
         height += 10 * i;
         createdBoxRef.style.width = width + "px";
         createdBoxRef.style.height = height + "px";
+        createdBoxRef.style.margin = "15px";
+        allBoxes.style.display = "flex";
         
         allBoxes.appendChild(createdBoxRef);
     }
@@ -46,7 +48,6 @@ function createBoxes(amount) {
 function destroyBoxes() {
     allBoxes.remove();
 }
-
 
 function rand() {
     return Math.floor(Math.random() * 256);
