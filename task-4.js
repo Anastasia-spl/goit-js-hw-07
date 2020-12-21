@@ -24,10 +24,10 @@ btnIncrement.addEventListener('click', () => {
 
 function decrement(obj) {
     obj.value -= 1;
-    resultRef.textContent = counterValue.value;
+    resultRef.textContent = obj.value;
 }
 
 function increment(obj) {
     obj.value += 1;
-    resultRef.textContent = counterValue.value;
+    resultRef.textContent = obj.value;
 }
